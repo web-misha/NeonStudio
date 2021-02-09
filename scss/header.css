@@ -1,0 +1,46 @@
+/*
+Error: Invalid CSS after "...linear infinite": expected "{", was ";"
+        on line 133 of D:\web\neon\scss\header.scss
+
+128:   background: url(../img/snow.png);
+129:   pointer-events: none;
+130:   width: 100px;
+131:   height: 100px;
+132:   bna
+133:   animation: snowflakes 2s linear infinite;
+134: }
+135: @keyframes snowflakes{
+136:   0%{
+137:     opacity: 1;
+138:   }
+
+Backtrace:
+D:\web\neon\scss\header.scss:133
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+D:/programs/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+D:/programs/Koala/bin/sass:22:in `load'
+D:/programs/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...linear infinite\": expected \"{\", was \";\"\A         on line 133 of D:\web\neon\scss\header.scss\A \A 128:   background: url(../img/snow.png);\A 129:   pointer-events: none;\A 130:   width: 100px;\A 131:   height: 100px;\A 132:   bna\A 133:   animation: snowflakes 2s linear infinite;\A 134: }\A 135: @keyframes snowflakes{\A 136:   0%{\A 137:     opacity: 1;\A 138:   }"; }

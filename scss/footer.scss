@@ -1,0 +1,98 @@
+footer {
+  @include adaptiv("margin-top", 100, 40, 0);
+  @include adaptiv("padding-top", 58, 28, 0);
+  @include adaptiv("padding-bottom", 58, 28, 0);
+  background-color: #373737;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer_block {
+  a {
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+    &:hover {
+      border-bottom-color: white;
+    }
+  }
+}
+.footer_block_left {
+  p {
+    font-weight: 500;
+    max-width: 324px;
+    @include adaptiv("font-size", 55, 25, 0);
+    @include adaptiv("line-height", 55, 25, 0);
+  }
+}
+.footer_block_center {
+  display: flex;
+  justify-content: space-between;
+  p {
+    @include adaptiv("margin-top", 23, 12, 0);
+  }
+}
+
+.block_items {
+  @include adaptiv("margin-right", 53, 25, 0);
+  p {
+    @include adaptiv("font-size", 14, 8, 0);
+    color: #b7b7b7;
+    cursor: pointer;
+  }
+  a {
+    @include adaptiv("font-size", 20, 12, 0);
+  }
+}
+.block_social {
+  @include adaptiv("font-size", 25, 15, 0);
+  display: block;
+  margin-bottom: 9px;
+}
+
+.footer_connect {
+  display: flex;
+  align-items: center;
+  @include adaptiv("margin-top", 69, 28, 0);
+  .connect_link {
+    @include adaptiv("margin-right", 300, 50, 0);
+    text-align: left;
+    background-color: #fdd455;
+    border-radius: 10px;
+    border: 1px solid #fdd455;
+    color: black;
+    @include adaptiv("font-size", 20, 13, 0);
+    @include adaptiv("padding-top", 15, 6, 0);
+    @include adaptiv("padding-bottom", 15, 6, 0);
+    @include adaptiv("padding-left", 57, 16, 0);
+    @include adaptiv("padding-right", 57, 16, 0);
+    transition: .3s;
+    &:hover{
+        background-color: #373737;
+        color: #fdd455;
+    }
+}
+  h3 {
+    margin: 0;
+    a {
+      border-bottom: 2px solid transparent;
+      transition: 0.3s;
+      &:hover {
+        border-bottom-color: white;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767px){
+  .footer_block_left{
+    p{
+      margin-bottom: 10px;
+    }
+  }
+  .footer_block_center{
+    margin-bottom: 10px;
+  }
+}

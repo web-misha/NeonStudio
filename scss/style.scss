@@ -1,0 +1,50 @@
+@import "variables";
+@import "media";
+
+body {
+  font-family: "Jost", sans-serif;
+  overflow-x: hidden;
+  color: white;
+  background-color: black;
+  @include adaptiv("font-size", 18, 12, 0);
+  @include adaptiv("padding-top", 50, 15, 0);
+  @include adaptiv("line-height", 28, 15, 0);
+}
+p {
+  @include adaptiv("font-size", 18, 12, 0);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  @include adaptiv("font-size", 100, 30, 0);
+  font-weight: 500;
+  @include adaptiv("line-height", 100, 35, 0);
+  letter-spacing: 0.05em;
+}
+h2 {
+  font-weight: 500;
+  @include adaptiv("font-size", 60, 24, 0);
+  @include adaptiv("line-height", 70, 25, 0);
+}
+h3 {
+  @include adaptiv("font-size", 35, 18, 0);
+  @include adaptiv("line-height", 45, 22, 0);
+  @include adaptiv("margin-top", 22, 10, 0);
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  @include adaptiv("padding-left", 15, 15, 0);
+  @include adaptiv("padding-right", 15, 15, 0);
+}
+
+@import "header";
+@import "main";
+@import "footer";
